@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Logo from '../components/Logo';
 import FormRow from '../components/FormRow';
-import Wrapper from '../assets/wrappers/RegisterPage';
+import Wrapper from '../cssResources/wrappers/RegisterPage';
 import Alert from '../components/Alert';
 import { useAppContext } from '../context/appContext';
 
