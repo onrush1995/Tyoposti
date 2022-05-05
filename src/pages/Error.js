@@ -1,25 +1,17 @@
 import { Link } from 'react-router-dom';
-import Wrapper from '../cssResources/wrappers/ErrorPage';
+import ErrorStyle from '../cssResources/wrappers/Error404';
+import img from '../cssResources/images/not-found.svg';
 
 const Error = () => {
     return (
-        <Wrapper>
-            <div className='scene'>
-                <div className='box'>
-                    <div className='box__face front'>4</div>
-                    <div className='box__face back'>0</div>
-                    <div className='box__face right'>4</div>
-                    <div className='box__face left'>0</div>
-                    <div className='box__face top'>0</div>
-                    <div className='box__face bottom'>0</div>
-                </div>
-                <div className='shadow' />
-            </div>
-            <div className='desc'>
-                <h2>Ooops page not found!</h2>
+        <ErrorStyle className='full-page'>
+            <div>
+                <img src={img} alt='404' />
+                <h3>page not found</h3>
+                <p>It seems the pages you are looking does not exist</p>
                 <Link to='/'>Back Home</Link>
             </div>
-        </Wrapper>
+        </ErrorStyle>
     );
 };
 
