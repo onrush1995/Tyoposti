@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Dashboard, Register, Landing, Error } from './pages';
+import { Dashboard, Register, Landing, Error } from './NavigationPages';
 function App() {
     return (
         <BrowserRouter>
