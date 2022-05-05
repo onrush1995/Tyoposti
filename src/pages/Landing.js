@@ -1,11 +1,11 @@
 import main from '../cssResources/images/main.svg';
-import Wrapper from '../cssResources/wrappers/Testing';
+import LandigStyle from '../cssResources/wrappers/StyleLanding';
 import Logo from '../components/Logo';
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
-        <Wrapper>
+        <LandigStyle>
             <nav>
                 <Logo />
             </nav>
@@ -35,7 +35,7 @@ const Landing = () => {
 
                 <img src={main} alt='job hunt' className='img main-img' />
             </div>
-        </Wrapper>
+        </LandigStyle>
     );
 };
 
